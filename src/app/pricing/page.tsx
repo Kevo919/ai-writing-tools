@@ -24,7 +24,7 @@ export default function PricingPage() {
             <h2 className="text-xl font-semibold mb-2">Free</h2>
             <p className="text-4xl font-bold mb-4">$0<span className="text-lg text-gray-400">/mo</span></p>
             <ul className="space-y-3 text-gray-300 mb-8">
-              <li>5 generations per day</li>
+              <li>3 generations per day</li>
               <li>Blog Post Outliner</li>
               <li>Basic SEO suggestions</li>
             </ul>
@@ -35,7 +35,7 @@ export default function PricingPage() {
           <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 relative">
             <div className="absolute -top-3 right-6 bg-purple-600 text-sm px-3 py-1 rounded-full">Popular</div>
             <h2 className="text-xl font-semibold mb-2">Pro</h2>
-            <p className="text-4xl font-bold mb-4">$9<span className="text-lg text-gray-400">/mo</span></p>
+            <p className="text-4xl font-bold mb-4">$19<span className="text-lg text-gray-400">/mo</span></p>
             <ul className="space-y-3 text-gray-300 mb-8">
               <li>Unlimited generations</li>
               <li>All writing tools</li>

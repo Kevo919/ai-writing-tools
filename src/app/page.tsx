@@ -48,7 +48,7 @@ export default function LandingPage() {
           href="/auth/signup"
           className="inline-block px-8 py-4 bg-purple-600 text-lg font-semibold rounded-xl hover:bg-purple-500 transition shadow-lg shadow-purple-600/30"
         >
-          Start Free — 5 Generations/Day
+          Start Free — 3 Generations/Day
         </Link>
       </section>
 
@@ -75,7 +75,7 @@ export default function LandingPage() {
             <h3 className="text-xl font-semibold mb-2">Free</h3>
             <p className="text-4xl font-bold mb-4">$0<span className="text-lg text-gray-400">/mo</span></p>
             <ul className="space-y-3 text-gray-300 mb-8">
-              <li>5 generations per day</li>
+              <li>3 generations per day</li>
               <li>Blog Post Outliner</li>
               <li>Basic SEO suggestions</li>
             </ul>
@@ -86,7 +86,7 @@ export default function LandingPage() {
           <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 border border-purple-500/30 rounded-2xl p-8 relative">
             <div className="absolute -top-3 right-6 bg-purple-600 text-sm px-3 py-1 rounded-full">Popular</div>
             <h3 className="text-xl font-semibold mb-2">Pro</h3>
-            <p className="text-4xl font-bold mb-4">$9<span className="text-lg text-gray-400">/mo</span></p>
+            <p className="text-4xl font-bold mb-4">$19<span className="text-lg text-gray-400">/mo</span></p>
             <ul className="space-y-3 text-gray-300 mb-8">
               <li>Unlimited generations</li>
               <li>All writing tools</li>

@@ -1,6 +1,5 @@
 import { prisma } from "./prisma";
-
-const FREE_TIER_LIMIT = 5;
+import { config } from "./config";
 
 export async function checkUsageLimit(userId: string, tool: string): Promise<{ allowed: boolean; used: number; limit: number | null }> {
   const today = new Date().toISOString().split("T")[0];
@@ -15,12 +14,14 @@ export async function checkUsageLimit(userId: string, tool: string): Promise<{ a
     return { allowed: true, used: 0, limit: null };
   }
 
+  const limit = config.freeTier.dailyLimit;
+
   const usage = await prisma.usage.findUnique({
     where: { userId_tool_date: { userId, tool, date: today } },
   });
 
   const used = usage?.count ?? 0;
-  return { allowed: used < FREE_TIER_LIMIT, used, limit: FREE_TIER_LIMIT };
+  return { allowed: used < limit, used, limit };
 }
 
 export async function incrementUsage(userId: string, tool: string): Promise<void> {
